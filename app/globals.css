@@ -2928,6 +2928,10 @@ h3,
   font-size: 13px;
 }
 
+.certificate-border .certificate-badge {
+  color: #fff;
+}
+
 .certificate-preview {
   min-width: 0;
 }
@@ -3039,8 +3043,9 @@ h3,
 .thread-list article {
   position: relative;
   display: grid;
-  grid-template-columns: 30px 1fr;
+  grid-template-columns: 30px 1fr auto;
   gap: 12px;
+  align-items: start;
   padding: 16px 12px;
   border-radius: 8px;
   color: var(--brand);
@@ -3081,9 +3086,7 @@ h3,
 }
 
 .thread-list small {
-  position: absolute;
-  right: 12px;
-  top: 12px;
+  position: static;
   padding: 4px 8px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.62);
